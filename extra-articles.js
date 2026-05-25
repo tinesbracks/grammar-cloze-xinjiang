@@ -386,6 +386,30 @@ addExamArticle("midongDietMock", {
   ]
 });
 
+addExamArticle("paperPrintingInternet", {
+  title: "2026乌鲁木齐第三次模拟考试",
+  startNo: 74,
+  questions: [
+    { no: 74, prompt: "(it)", answers: ["its"], options: ["it", "its", "itself", "it's"], hasPrompt: true, pos: "代词", mapNode: "pron", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词性和名词性物主代词", focusOptions: ["人称代词：主格", "人称代词：动词/介词 + 宾格", "形容词性和名词性物主代词", "反身代词"], point: "形容词性物主代词 + 名词", clue: "invention", explain: "空后为名词 invention，表示“它的发明”，需要形容词性物主代词 its。" },
+    { no: 75, prompt: "", answers: ["by"], options: ["by", "with", "in", "on"], hasPrompt: false, mapNode: "blank", noPromptType: "介词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "by hand", clue: "made books / hand", explain: "by hand 意为“用手工/手工地”，表示人们手工制作书本。" },
+    { no: 76, prompt: "", answers: ["a"], options: ["a", "an", "the", "/"], hasPrompt: false, mapNode: "blank", noPromptType: "冠词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "as a result", clue: "As / result", explain: "as a result 是固定短语，意为“结果”，填 a。" },
+    { no: 77, prompt: "(learn)", answers: ["to learn"], options: ["learn", "learning", "learned", "to learn"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "非谓语动词", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "非谓语：to do", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "有", route: "非谓语", nonPredicateFocus: "to do", subject: "few people", predicate: "had", blank: "learn", clueText: "chance" }), point: "have the chance to do sth.", clue: "chance", explain: "句中已有谓语 had，learn 走非谓语路线；have the chance to do sth. 表示“有机会做某事”，填 to learn。" },
+    { no: 78, prompt: "(invent)", answers: ["invented"], options: ["invent", "invented", "inventing", "was invented"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词语态", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "谓语：时态+语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态+语态", actionRelation: "被动承受动作", structure: "一般过去时+被动", subject: "Printing", predicate: "was", blank: "invent", clueText: "was / in China" }), point: "was done", clue: "was / in China", explain: "主语 Printing 与 invent 是被动关系，空前 was 已给出，填过去分词 invented，构成一般过去时被动语态。" },
+    { no: 79, prompt: "(cheap)", answers: ["cheaply"], options: ["cheap", "cheaper", "cheaply", "cheapest"], hasPrompt: true, pos: "形容词与副词", mapNode: "adj", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词变副词", focusOptions: ["比较级与最高级", "形容词变名词", "形容词变副词", "形容词修饰名词"], point: "副词修饰动词", clue: "produce / more quickly and", explain: "空处与 more quickly 并列，并共同修饰 produce，需要副词 cheaply。" },
+    { no: 80, prompt: "(come)", answers: ["came"], options: ["come", "comes", "came", "coming"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "谓语：时态+语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "一般过去时", subject: "newspapers", blank: "come", clueText: "Then" }), point: "一般过去时", clue: "Then / out", explain: "整段按时间顺序讲述过去的发展，Then 表示“后来/然后”，come 的过去式为 came，came out 表示“出版/问世”。" },
+    { no: 81, prompt: "", answers: ["but"], options: ["and", "but", "so", "because"], hasPrompt: false, mapNode: "blank", noPromptType: "连词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "并列连词（转折关系）", clue: "is new / is growing very fast", explain: "前句说互联网是新事物，后句说它发展非常快，前后存在转折关系，用 but。" },
+    { no: 82, prompt: "(book)", answers: ["books"], options: ["book", "books", "book's", "booking"], hasPrompt: true, pos: "名词", mapNode: "noun", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "可数名词变复数", focusOptions: ["可数名词变复数", "可数名词变所有格", "不可数名词转换为形容词", "不可数名词转换为副词"], point: "可数名词复数", clue: "than", explain: "book 是可数名词，此处泛指“书籍”，空前没有 a/the 等限定词，需用复数 books。" },
+    { no: 83, prompt: "(small)", answers: ["smaller"], options: ["small", "smaller", "smallest", "more small"], hasPrompt: true, pos: "形容词与副词", mapNode: "adj", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "比较级与最高级", focusOptions: ["比较级与最高级", "形容词变名词", "形容词变副词", "形容词修饰名词"], point: "比较级", clue: "than", explain: "空后出现 than，提示使用比较级，small 变为 smaller。" },
+    { no: 84, prompt: "(be)", answers: ["are"], options: ["am", "is", "are", "were"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态与语态", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "谓语：时态+语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态+语态", actionRelation: "被动承受动作", structure: "一般现在时+被动", subject: "computers and the Internet", blank: "be", clueText: "Now / used" }), point: "are done", clue: "Now / computers and the Internet / used", explain: "Now 提示一般现在时；主语 computers and the Internet 是复数，且与 use 是被动关系，因此用 are，与 used 构成一般现在时被动语态。" }
+  ],
+  paragraphs: [
+    `Paper was first created about 2,000 years ago in China. After [[74]] invention, people started to write on paper to make books. In those days, people made books [[75]] hand. They could make only one book each time. As [[76]] result, the books were expensive. So few people had the chance [[77]] to read.`,
+    `Printing was [[78]] in China during the Sui and Tang dynasties. Later, developments in printing made it possible to produce books more quickly and [[79]]. Then newspapers [[80]] out. This new form made knowledge and ideas spread faster than ever before.`,
+    `The Internet is new, [[81]] it is growing very fast. Soon it will be more powerful than printing. It can store more information than [[82]]. The mobile phones we use are often [[83]] than a book. So people can get more information and share it more easily.`,
+    `Now, computers and the Internet [[84]] used in classrooms, and newspapers and magazines are already read online. What will traditional printing be like in the future? Let's wait and see.`
+  ]
+});
+
 function applyExamArticleMetadata() {
   const metadata = {
     grade9: {
@@ -458,6 +482,12 @@ function applyExamArticleMetadata() {
       serial: "12",
       practiceTitle: "健康饮食与学习能力",
       source: "2026年乌鲁木齐米东区5月中考模拟",
+      group: "中考练习篇目"
+    },
+    paperPrintingInternet: {
+      serial: "13",
+      practiceTitle: "纸张、印刷术与互联网的发展",
+      source: "2026乌鲁木齐第三次模拟考试",
       group: "中考练习篇目"
     },
     grade8StressMidterm: {
