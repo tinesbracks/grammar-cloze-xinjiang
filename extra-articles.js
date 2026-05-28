@@ -410,6 +410,53 @@ addExamArticle("paperPrintingInternet", {
   ]
 });
 
+addExamArticle("zhangSixuanMartialArts", {
+  title: "决胜中考2026新疆中考英语仿真卷",
+  startNo: 74,
+  questions: [
+    { no: 74, prompt: "(she)", answers: ["her"], options: ["she", "her", "hers", "herself"], hasPrompt: true, pos: "代词", mapNode: "pron", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词性和名词性物主代词", focusOptions: ["人称代词：主格", "人称代词：动词/介词 + 宾格", "形容词性和名词性物主代词", "反身代词"], point: "形容词性物主代词 + 名词", clue: "skills", explain: "空后核心词是名词 skills，表达“她的优秀传统武术技能”，需要形容词性物主代词 her。" },
+    { no: 75, prompt: "(start)", answers: ["started"], options: ["start", "starts", "started", "starting"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "谓语：时态+语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "一般过去时", subject: "Zhang Sixuan", blank: "start", clueText: "became / won" }), point: "一般过去时", clue: "became famous / won", explain: "全文讲述张思萱过去的经历，前后有 became、won 等过去式，start 用过去式 started。" },
+    { no: 76, prompt: "", answers: ["at"], options: ["at", "in", "on", "by"], hasPrompt: false, mapNode: "blank", noPromptType: "介词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "at the age of", clue: "the age of", explain: "at the age of + 数字 是固定搭配，意为“在……岁时”。" },
+    { no: 77, prompt: "", answers: ["Although", "Though"], options: ["Although", "Because", "If", "So"], hasPrompt: false, mapNode: "blank", noPromptType: "连词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "让步状语从句连接词", clue: "was very young / never stopped", explain: "前半句“她很年轻”和后半句“从未停止训练”构成让步关系，用 Although 或 Though，句首需大写。" },
+    { no: 78, prompt: "(careful)", answers: ["carefully"], options: ["careful", "carefully", "care", "more careful"], hasPrompt: true, pos: "形容词与副词", mapNode: "adj", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词变副词", focusOptions: ["比较级与最高级", "形容词变名词", "形容词变副词", "形容词修饰名词"], point: "副词修饰动词", clue: "practiced", explain: "空处修饰动词 practiced，需要副词 carefully。" },
+    { no: 79, prompt: "(child)", answers: ["children"], options: ["child", "childs", "children", "children's"], hasPrompt: true, pos: "名词", mapNode: "noun", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "可数名词变复数", focusOptions: ["可数名词变复数", "可数名词变所有格", "不可数名词转换为形容词", "不可数名词转换为副词"], point: "名词不规则复数", clue: "other", explain: "other 后常接可数名词复数表示“其他的……”，child 的复数是不规则形式 children。" },
+    { no: 80, prompt: "(be)", answers: ["were"], options: ["is", "are", "was", "were"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态与主谓一致", focusOptions: ["谓语：常考时态标志词", "谓语：主谓一致", "谓语：四种被动语态", "非谓语：to do"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "一般过去时", subject: "Her parents", blank: "be", clueText: "encouraged" }), point: "一般过去时 + 复数主语", clue: "parents / encouraged", explain: "继续描述过去经历，且后文 encouraged 是过去式；主语 parents 是复数，be 动词用 were。" },
+    { no: 81, prompt: "(finish)", answers: ["finish"], options: ["finish", "finishes", "finished", "to finish"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "情态动词 + 原形", focusOptions: ["谓语：常考时态标志词", "谓语：情态动词 + 原形", "谓语：四种被动语态", "非谓语：to do"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "情态动词 + 动词原形", subject: "she", blank: "finish", clueText: "can" }), point: "情态动词后原形", clue: "can", explain: "空前有情态动词 can，后接动词原形 finish。" },
+    { no: 82, prompt: "(surprise)", answers: ["surprised"], options: ["surprise", "surprising", "surprised", "surprises"], hasPrompt: true, pos: "形容词与副词", mapNode: "adj", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词作表语", focusOptions: ["比较级与最高级", "形容词变名词", "形容词变副词", "形容词修饰名词"], point: "be surprised at", clue: "are / at / Many people", explain: "be surprised at... 表示“对……感到惊讶”。主语是 Many people，表示人的情感状态，用 surprised。" },
+    { no: 83, prompt: "(much)", answers: ["more"], options: ["much", "many", "more", "most"], hasPrompt: true, pos: "形容词与副词", mapNode: "adj", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "比较级与最高级", focusOptions: ["比较级与最高级", "形容词变名词", "形容词变副词", "形容词修饰名词"], point: "比较级", clue: "teenagers", explain: "结合语境表示“更多的青少年”，much/many 的比较级为 more，用 more 修饰复数名词 teenagers。" },
+    { no: 84, prompt: "", answers: ["a"], options: ["a", "an", "the", "/"], hasPrompt: false, mapNode: "blank", noPromptType: "冠词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "不定冠词泛指", clue: "coach", explain: "coach 是可数名词单数，此处泛指“一名教练”，且 coach 以辅音音素开头，用 a。" }
+  ],
+  paragraphs: [
+    `In 2026, 12-year-old Zhang Sixuan from Henan became famous around China. She set a Guinness World Record for [[74]] excellent traditional martial arts skills. Zhang Sixuan [[75]] practicing martial arts [[76]] the age of five.`,
+    `[[77]] she was very young, she never stopped training every day. She practiced [[78]] and kept improving. When she was nine, she won the World Shaolin Kung Fu Championship. Her performance was even shown on TV. Sixuan's daily life of training was hard: early morning training, school classes, and evening practice. She often trained during vacations while other [[79]] played. Her parents [[80]] her strongest support. They often encouraged her and taught her to hold on to her dream.`,
+    `Now she can [[81]] 69 headstands in one minute and 11 splits on benches in one minute. Many people are [[82]] at her talent. She is so crazy about traditional martial arts that she wants to pass it on to [[83]] teenagers. During her free time, she leads her classmates to perform Chinese martial arts on the street. Her biggest dream is to be [[84]] coach and pass on our traditional culture as well.`
+  ]
+});
+
+addExamArticle("sadHorseToy", {
+  title: "2026中考考前最后一卷（新疆专用）",
+  startNo: 74,
+  questions: [
+    { no: 74, prompt: "(become)", answers: ["become"], options: ["become", "became", "becoming", "becomes"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态", focusOptions: ["谓语：常考时态标志词", "谓语：现在完成时", "谓语：四种被动语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "现在完成时", subject: "A horse toy", predicate: "has", blank: "become", clueText: "has" }), point: "现在完成时", clue: "has", explain: "空前 has 提示现在完成时，需要过去分词；become 的过去分词仍为 become。" },
+    { no: 75, prompt: "(it)", answers: ["its"], options: ["it", "its", "itself", "it's"], hasPrompt: true, pos: "代词", mapNode: "pron", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词性和名词性物主代词", focusOptions: ["人称代词：主格", "人称代词：动词/介词 + 宾格", "形容词性和名词性物主代词", "反身代词"], point: "形容词性物主代词 + 名词", clue: "mouth", explain: "空后是名词 mouth，表达“它的嘴巴”，需要形容词性物主代词 its。" },
+    { no: 76, prompt: "", answers: ["but"], options: ["and", "but", "so", "because"], hasPrompt: false, mapNode: "blank", noPromptType: "连词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "并列连词（转折关系）", clue: "sad / cute", explain: "sad 与 cute 存在转折和对比关系，表示“悲伤但可爱”，用 but。" },
+    { no: 77, prompt: "(feel)", answers: ["felt"], options: ["feel", "feels", "felt", "feeling"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "谓语：时态+语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "一般过去时", subject: "They", blank: "feel", clueText: "bought / saw / began / liked" }), point: "一般过去时", clue: "bought / saw / began / liked", explain: "本段描述过去发生的事情，前文有 bought、saw、began、liked 等过去式，feel 用过去式 felt。" },
+    { no: 78, prompt: "", answers: ["up"], options: ["up", "out", "off", "in"], hasPrompt: false, mapNode: "blank", noPromptType: "介词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "cheer sb. up", clue: "cheered", explain: "cheer sb. up 是固定搭配，意为“使某人振奋/让某人开心起来”。" },
+    { no: 79, prompt: "(fix)", answers: ["to fix"], options: ["fix", "fixing", "fixed", "to fix"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "非谓语动词", focusOptions: ["谓语：常考时态标志词", "谓语：四种被动语态", "非谓语：to do", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "有", route: "非谓语", nonPredicateFocus: "to do", subject: "owner", predicate: "tried", blank: "fix", clueText: "tried" }), point: "try to do sth.", clue: "tried", explain: "句中已有谓语 tried，fix 走非谓语路线；try to do sth. 表示“尝试做某事”，填 to fix。" },
+    { no: 80, prompt: "(make)", answers: ["making"], options: ["make", "makes", "making", "made"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态", focusOptions: ["谓语：常考时态标志词", "谓语：现在进行时", "谓语：四种被动语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "现在进行时", subject: "workers", predicate: "are", blank: "make", clueText: "Now / are" }), point: "现在进行时", clue: "Now / are", explain: "Now 和空前 are 提示现在进行时，make 去 e 加 ing，填 making。" },
+    { no: 81, prompt: "(line)", answers: ["lines"], options: ["line", "lines", "line's", "lining"], hasPrompt: true, pos: "名词", mapNode: "noun", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "可数名词变复数", focusOptions: ["可数名词变复数", "可数名词变所有格", "不可数名词转换为形容词", "不可数名词转换为副词"], point: "可数名词复数", clue: "over ten", explain: "空前 over ten 表示超过十条，line 是可数名词，用复数 lines。" },
+    { no: 82, prompt: "(fun)", answers: ["funny"], options: ["fun", "funny", "funnily", "funniest"], hasPrompt: true, pos: "形容词与副词", mapNode: "adj", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "形容词修饰名词", focusOptions: ["比较级与最高级", "形容词变名词", "形容词变副词", "形容词修饰名词"], point: "形容词修饰名词", clue: "ways", explain: "空后是名词 ways，需要形容词作定语，fun 变为 funny。" },
+    { no: 83, prompt: "", answers: ["an"], options: ["a", "an", "the", "/"], hasPrompt: false, mapNode: "blank", noPromptType: "冠词", noPromptTypeOptions: ["冠词", "介词", "连词", "代词"], point: "不定冠词泛指", clue: "incorrect thing", explain: "thing 是可数名词单数，表示“一件不正确的事情”；incorrect 以元音音素开头，用 an。" },
+    { no: 84, prompt: "(want)", answers: ["wants"], options: ["want", "wants", "wanted", "wanting"], hasPrompt: true, pos: "动词", mapNode: "verb", posOptions: ["名词", "动词", "形容词与副词", "数词", "代词"], focus: "谓语动词时态与主谓一致", focusOptions: ["谓语：常考时态标志词", "谓语：主谓一致", "谓语：四种被动语态", "非谓语：doing"], verbFlow: makeVerbFlow({ hasChangedVerb: "没有", route: "谓语", predicateKind: "时态", actionRelation: "主动发出动作", structure: "一般现在时", subject: "everyone", blank: "want", clueText: "everyone / becomes" }), point: "一般现在时三单", clue: "everyone / becomes", explain: "定语从句主语 everyone 视为第三人称单数，且主句 becomes 是一般现在时，所以 want 加 -s 变为 wants。" }
+  ],
+  paragraphs: [
+    `A horse toy for the new year has [[74]] very hot online. This happened because of a small mistake. A worker in Yiwu, Zhejiang province, sewed [[75]] mouth upside down. This made the toy look sad [[76]] cute.`,
+    `A girl bought this toy and put its picture on the Internet. Many people saw it. They began to call it the "Sad Horse". Many people liked its sad face. They [[77]] the toy understood their unhappy feelings. It cheered them [[78]] during bad days. Soon, everyone wanted to buy this "Sad Horse".`,
+    `The toy is about 20cm tall and costs 25 yuan. At first, the factory owner tried [[79]] the mistake. But after seeing so many people wanted the "wrong" toy, he changed his mind. Now, the factory workers are [[80]] this kind of "Sad Horse". They are using over ten production [[81]] to make more toys! The owner said that the orders are full until June 2026.`,
+    `People online talk about the toy in some [[82]] ways. They say the new year allows you to feel sad sometimes. Some people joke that the horse "fell down" but became successful-a real-life story of something bad turning into something good. The factory owner said it was just a worker's mistake. But this mistake made the toy a big hit. From [[83]] incorrect thing, it becomes a popular toy that everyone [[84]].`
+  ]
+});
+
 function applyExamArticleMetadata() {
   const metadata = {
     grade9: {
@@ -488,6 +535,18 @@ function applyExamArticleMetadata() {
       serial: "13",
       practiceTitle: "纸张、印刷术与互联网的发展",
       source: "2026乌鲁木齐第三次模拟考试",
+      group: "中考练习篇目"
+    },
+    zhangSixuanMartialArts: {
+      serial: "14",
+      practiceTitle: "张思萱与传统武术梦想",
+      source: "决胜中考2026新疆中考英语仿真卷",
+      group: "中考练习篇目"
+    },
+    sadHorseToy: {
+      serial: "15",
+      practiceTitle: "倒嘴小马玩具意外走红",
+      source: "2026中考考前最后一卷（新疆专用）",
       group: "中考练习篇目"
     },
     grade8StressMidterm: {
