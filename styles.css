@@ -548,6 +548,12 @@ h3 {
   outline: 2px solid #9fc4ff;
 }
 
+.dynamic-highlight.tenseClue {
+  background: #ffecec;
+  color: #c62828;
+  outline: 2px solid #f2a3a3;
+}
+
 .dynamic-highlight.nonPredicate {
   background: #eaf8ef;
   color: #1f7c4d;
@@ -1229,6 +1235,7 @@ h3 {
 
 .panel-head,
 .skeleton-bar,
+.verb-cue-panel,
 .choice-block,
 .result-card {
   padding: 1rem;
@@ -1272,6 +1279,39 @@ h3 {
   border-radius: 0.4rem;
   background: #fff;
   color: var(--ink);
+}
+
+.verb-cue-panel {
+  display: grid;
+  gap: 0.55rem;
+  border-color: #d4e3d2;
+  background: #f6fbf5;
+}
+
+.verb-cue-panel > strong {
+  color: #24733d;
+}
+
+.verb-cue-panel p {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.65rem;
+  margin: 0;
+  align-items: start;
+}
+
+.verb-cue-panel b {
+  color: #195b32;
+}
+
+.verb-cue-panel span {
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.verb-cue-panel .tense-cue b,
+.verb-cue-panel .tense-cue span {
+  color: #c62828;
 }
 
 .choice-block .options-grid {
